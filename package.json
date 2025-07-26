@@ -1,0 +1,27 @@
+{
+  "name": "ts_starter",
+  "version": "1.0.0",
+  "description": "Basic TypeScript Starter",
+  "main": "./dist/index.js",
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js",
+    "dev": "tsc-watch --noClear -p ./tsconfig.json --onSuccess \"node ./dist/index.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kampofo/TS_Starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kampofo/TS_Starter/issues"
+  },
+  "homepage": "https://github.com/kampofo/TS_Starter#readme",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsc-watch": "^7.1.1",
+    "typescript": "^5.8.3"
+  }
+}
